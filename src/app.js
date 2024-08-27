@@ -1,5 +1,5 @@
-import './css/style.css'
+import "./css/style.css";
 
-import router from './js/ui/router'
+import router from "./js/router";
 
-router(window.location.pathname)
+router(window.location.pathname);

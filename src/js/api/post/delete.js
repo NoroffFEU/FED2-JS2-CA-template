@@ -1,1 +1,1 @@
-export async function deletePost(id) { }
+export async function deletePost(id) {}
