@@ -1,1 +1,1 @@
-export async function updateProfile(username, { avatar, banner, bio }) {}
+export async function updateProfile(username, { avatar, banner }) {}

@@ -1,1 +1,1 @@
-export async function login(email, password) {}
+export async function login({ email, password }) {}

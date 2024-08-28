@@ -1,1 +1,1 @@
-export async function updatePost(id, { title, body, media, tags }) {}
+export async function updatePost(id, { title, body, tags, media }) {}

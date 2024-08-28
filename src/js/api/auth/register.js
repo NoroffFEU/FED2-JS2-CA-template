@@ -1,1 +1,8 @@
-export async function register(username, email, password, avatar, banner) {}
+export async function register({
+  name,
+  email,
+  password,
+  bio,
+  banner,
+  avatar,
+}) {}

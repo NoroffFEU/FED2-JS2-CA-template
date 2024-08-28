@@ -1,1 +1,3 @@
-alert("This is the root path");
+import { authGuard } from "../../utilities/authGuard";
+
+authGuard();

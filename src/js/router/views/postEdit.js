@@ -1,1 +1,3 @@
-alert("Edit Post View");
+import { authGuard } from "../../utilities/authGuard";
+
+authGuard();

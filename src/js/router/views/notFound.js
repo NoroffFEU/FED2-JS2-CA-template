@@ -1,1 +1,1 @@
-alert("404 route not found");
+alert("Page cannot be found in /src/views");
