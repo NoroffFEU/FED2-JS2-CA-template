@@ -5,4 +5,4 @@ import { setLogoutListener } from "./js/ui/global/logout";
 
 await router(window.location.pathname);
 
-setLogoutListener()
+setLogoutListener();

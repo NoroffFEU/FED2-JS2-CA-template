@@ -1,3 +1,6 @@
+// This function controls which JavaScript file is loaded on which page
+// In order to add additional pages, you will need to implement them below
+// You may change the behaviour or approach of this file if you choose
 export default async function router(pathname = window.location.pathname) {
   switch (pathname) {
     case "/":
@@ -14,9 +17,6 @@ export default async function router(pathname = window.location.pathname) {
       break;
     case "/post/":
       await import("./views/post.js");
-      break;
-    case "/posts/":
-      await import("./views/posts.js");
       break;
     case "/post/edit/":
       await import("./views/postEdit.js");

@@ -1,12 +1,3 @@
-import { readPosts } from "../../api/post/read";
-import { postTemplate } from "../../templates/post";
+import { authGuard } from "../../utilities/authGuard";
 
-if (localStorage.token) {
-  document.querySelector("#content").innerHTML = ""
-
-  const { data: posts, meta } = await readPosts();
-
-  const postTemplates = posts.map(postTemplate);
-
-  document.querySelector("#content").append(...postTemplates)
-}
+authGuard();
