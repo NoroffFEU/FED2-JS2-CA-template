@@ -1,8 +1,9 @@
 import { readPost } from "../../api/post/read";
 import { onDeletePost } from "../../ui/post/delete";
+import { getCurrentUser } from "../../utilities/getCurrentUser";
 import { getQueryProperty } from "../../utilities/getQueryProperty";
 
-const me = JSON.parse(localStorage.user);
+const me = getCurrentUser()
 
 const id = getQueryProperty("id");
 
