@@ -1,12 +1,11 @@
 import { API_AUTH_LOGIN } from "../constants";
+import { headers } from "../headers";
 
 export async function login(userData) {
   const body = JSON.stringify(userData)
 
   const response = await fetch(API_AUTH_LOGIN, {
-    headers: {
-      'Content-Type': 'application/json'
-    },
+    headers: headers(body),
     method: 'post',
     body
   })
